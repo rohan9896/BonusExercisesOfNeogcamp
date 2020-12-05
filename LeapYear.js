@@ -30,7 +30,22 @@ function isLeapYear(year) {
 
 // isLeapYear(2013)
 
+
+
+console.log(chalk.bgMagenta("This game check whether you were born in leap year or not!"))
+
+console.log();
+
+var nameOfUser = readlinesync.question(chalk.bgYellow("Enter your name: "))
+console.log();
+
+console.log("OK "+nameOfUser+" Lets start the game!!!!!!!");
+
+console.log();
+
 var inputYear = readlinesync.question(chalk.bgBlue("Enter your Year of birth: "));
+
+console.log();
 
 if(!isValidYear(inputYear)){
   console.log(chalk.red.underline.bold("Invalid Year"));
@@ -40,6 +55,6 @@ else{
     console.log(chalk.blue.underline.bold("You were born in leap year!!"));
   }
   else{
-    console.log(chalk.red.underline.bold("You were not born on leap year!!"));
+    console.log(chalk.red.underline.bold("You were not born in leap year!!"));
   }
 }
