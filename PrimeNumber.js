@@ -21,6 +21,8 @@ function isPrime(n){
 
 var userInput = readlinesync.question(chalk.bgBlue("Enter the number: "));
 
+console.log();
+
 if(isPrime(userInput)){
     console.log(chalk.blue(userInput+" is a prime number"));
 }
